@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2 Skins Tracker - Вход</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="header__logo title">CS2 Skins Tracker</h1>
+    <nav class="nav">
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link" href="skins.html">Скины</a>
+            <a class="nav__link" href="about.html">О сайте</a>
+            <a class="nav__link nav__link_active" href="login.html">Вход</a>
+    </nav>
+</header>
+
+<main class="page">
+    <h2 class="title title_page">Вход</h2>
+    <p class="page__text">Войди, чтобы сохранять избранные скины.</p>
+
+    <form class="form" id="login-form" novalidate>
+        <div class="form__field">
+            <label class="form__label" for="login">Логин</label>
+            <input class="form__input" type="text" id="login" name="login"
+                   placeholder="Например, s1mple" required>
+        </div>
+
+        <div class="form__field">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email"
+                   placeholder="you@example.com" required>
+        </div>
+
+        <div class="form__field">
+            <label class="form__label" for="password">Пароль</label>
+            <input class="form__input" type="password" id="password" name="password"
+                   placeholder="Не меньше 6 символов" required>
+        </div>
+
+        <div class="form__field">
+            <label class="form__label" for="weapon">Любимое оружие</label>
+            <select class="form__input" id="weapon" name="weapon">
+                <option value="AK-47">AK-47</option>
+                <option value="AWP">AWP</option>
+                <option value="M4A4">M4A4</option>
+                <option value="USP-S">USP-S</option>
+            </select>
+        </div>
+
+        <div class="form__field form__field_checkbox">
+            <input class="form__checkbox" type="checkbox" id="agree" name="agree">
+            <label class="form__label" for="agree">Согласен на обработку персональных данных</label>
+        </div>
+
+        <button class="form__button" type="submit">Войти</button>
+        <p class="form__status" id="form-status"></p>
+    </form>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 CS2 Skins Tracker</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

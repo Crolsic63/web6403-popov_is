@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2 Skins Tracker - Скины</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="header__logo title">CS2 Skins Tracker</h1>
+    <nav class="nav">
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link nav__link_active" href="skins.html">Скины</a>
+            <a class="nav__link" href="about.html">О сайте</a>
+            <a class="nav__link" href="login.html">Вход</a>
+    </nav>
+</header>
+
+<main class="page">
+    <h2 class="title title_page">Популярные скины</h2>
+    <p class="page__text">Цены указаны в рублях и обновляются каждый день. Наведи на карточку!</p>
+
+    <!-- Вёрстка с помощью Grid -->
+    <section class="skin-grid">
+        <article class="skin-grid__item skin-grid__item_wide skin-card skin-card_rarity_covert" style="--i: 0">
+            <div class="skin-card__art">AWP</div>
+            <h3 class="skin-card__name">Dragon Lore</h3>
+            <p class="skin-card__meta">
+                <span>Скрытая</span>
+                <span class="skin-card__price">320 000 ₽</span>
+            </p>
+        </article>
+        <article class="skin-grid__item skin-card skin-card_rarity_covert" style="--i: 1">
+            <div class="skin-card__art">AK-47</div>
+            <h3 class="skin-card__name">Vulkan</h3>
+            <p class="skin-card__meta">
+                <span>Скрытая</span>
+                <span class="skin-card__price">85 000 ₽</span>
+            </p>
+        </article>
+        <article class="skin-grid__item skin-card skin-card_rarity_classified" style="--i: 2">
+            <div class="skin-card__art">M4A4</div>
+            <h3 class="skin-card__name">Asiimov</h3>
+            <p class="skin-card__meta">
+                <span>Засекреченная</span>
+                <span class="skin-card__price">4 500 ₽</span>
+            </p>
+        </article>
+        <article class="skin-grid__item skin-card skin-card_rarity_classified" style="--i: 3">
+            <div class="skin-card__art">USP-S</div>
+            <h3 class="skin-card__name">Neo-Noir</h3>
+            <p class="skin-card__meta">
+                <span>Засекреченная</span>
+                <span class="skin-card__price">3 200 ₽</span>
+            </p>
+        </article>
+        <article class="skin-grid__item skin-card skin-card_rarity_restricted" style="--i: 4">
+            <div class="skin-card__art">AK-47</div>
+            <h3 class="skin-card__name">Redline</h3>
+            <p class="skin-card__meta">
+                <span>Запрещённая</span>
+                <span class="skin-card__price">1 800 ₽</span>
+            </p>
+        </article>
+    </section>
+
+    <h3 class="title title_section">Таблица цен</h3>
+    <table class="price-table">
+        <tr class="price-table__row">
+            <th class="price-table__cell price-table__cell_head">Скин</th>
+            <th class="price-table__cell price-table__cell_head">Оружие</th>
+            <th class="price-table__cell price-table__cell_head">Редкость</th>
+            <th class="price-table__cell price-table__cell_head">Цена, ₽</th>
+        </tr>
+        <tr class="price-table__row">
+            <td class="price-table__cell">Dragon Lore</td>
+            <td class="price-table__cell">AWP</td>
+            <td class="price-table__cell price-table__cell_center">Скрытая</td>
+            <td class="price-table__cell price-table__cell_right">320 000</td>
+        </tr>
+        <tr class="price-table__row">
+            <td class="price-table__cell">Vulkan</td>
+            <td class="price-table__cell">AK-47</td>
+            <td class="price-table__cell price-table__cell_center">Скрытая</td>
+            <td class="price-table__cell price-table__cell_right">85 000</td>
+        </tr>
+        <tr class="price-table__row">
+            <td class="price-table__cell">Asiimov</td>
+            <td class="price-table__cell">M4A4</td>
+            <td class="price-table__cell price-table__cell_center">Засекреченная</td>
+            <td class="price-table__cell price-table__cell_right">4 500</td>
+        </tr>
+        <tr class="price-table__row">
+            <td class="price-table__cell">Neo-Noir</td>
+            <td class="price-table__cell">USP-S</td>
+            <td class="price-table__cell price-table__cell_center">Засекреченная</td>
+            <td class="price-table__cell price-table__cell_right">3 200</td>
+        </tr>
+        <tr class="price-table__row">
+            <td class="price-table__cell">Redline</td>
+            <td class="price-table__cell">AK-47</td>
+            <td class="price-table__cell price-table__cell_center">Запрещённая</td>
+            <td class="price-table__cell price-table__cell_right">1 800</td>
+        </tr>
+    </table>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 CS2 Skins Tracker</p>
+</footer>
+
+</body>
+</html>
